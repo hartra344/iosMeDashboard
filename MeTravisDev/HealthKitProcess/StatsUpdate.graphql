@@ -1,0 +1,4 @@
+mutation addStat($statsToAdd: [StatUpdateInput!]!) {
+  update_stats(data: $statsToAdd)
+}
+

@@ -7,14 +7,12 @@
 //
 
 import SwiftUI
-import KeychainSwift
 
 struct LoginView: View {
     // MARK: - Propertiers
     @State private var email = ""
     @State private var password = ""
-    static let loginKeychainKey = "login"
-    
+    @EnvironmentObject var user_settings:UserSettings
     // MARK: - View
     var body: some View {
         VStack() {
@@ -77,20 +75,7 @@ struct LoginView: View {
                 debugPrint("fail")
                 return
             }
-            let keychain = KeychainSwift()
-            if keychain.set(data.login.token, forKey: LoginView.loginKeychainKey){
-              // Keychain item is saved successfully
-                debugPrint("keychain success")
-                debugPrint(keychain.get(LoginView.loginKeychainKey) ?? "Nothing")
-            } else {
-              // Report error
-                debugPrint("keychain fail")
-                if keychain.lastResultCode != noErr {
-                    debugPrint(keychain.lastResultCode)
-                }
-            }
-            
-            //debugPrint(data.login.token)
+            self.user_settings.setAccessToken(token: data.login.token)
         }
     }
 }
@@ -98,12 +83,6 @@ struct LoginView: View {
 extension UIApplication {
     func endEditing() {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
     }
 }
 

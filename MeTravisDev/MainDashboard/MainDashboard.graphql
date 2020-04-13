@@ -1,8 +1,12 @@
-query MainDashboard {
+query MainDashboard($date: String!) {
   me {
     firstname
     lastname
     avatar
   }
+  stats(startDate: $date, first: 1) {
+    nodes {
+      weight
+    }
+  }
 }
-

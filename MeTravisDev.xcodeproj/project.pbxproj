@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40A069124441B0D00169B28 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A069024441B0D00169B28 /* UserSettings.swift */; };
+		C40A06932444231B00169B28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A06922444231B00169B28 /* Constants.swift */; };
 		C4CED55D2443E01600E3678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CED55C2443E01600E3678D /* AppDelegate.swift */; };
 		C4CED55F2443E01600E3678D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CED55E2443E01600E3678D /* SceneDelegate.swift */; };
 		C4CED5612443E01600E3678D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CED5602443E01600E3678D /* ContentView.swift */; };
@@ -25,9 +27,17 @@
 		C4CED58B2443F0CF00E3678D /* MainDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CED58A2443F0CF00E3678D /* MainDashboard.swift */; };
 		C4CED58D2443F0EA00E3678D /* MainDashboard.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C4CED58C2443F0EA00E3678D /* MainDashboard.graphql */; };
 		C4CED5902443F25C00E3678D /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = C4CED58F2443F25C00E3678D /* Introspect */; };
+		C4FE1B922444CF3F00299852 /* StatsUpdate.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C4FE1B912444CF3F00299852 /* StatsUpdate.graphql */; };
+		C4FE1B942444D02D00299852 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE1B932444D02D00299852 /* HealthKitAssistant.swift */; };
+		C4FE1B982444D03C00299852 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FE1B972444D03C00299852 /* HealthKit.framework */; };
+		C4FE1B9B2444DA9F00299852 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = C4FE1B9A2444DA9F00299852 /* Promises */; };
+		C4FE1B9D2444DA9F00299852 /* FBLPromises in Frameworks */ = {isa = PBXBuildFile; productRef = C4FE1B9C2444DA9F00299852 /* FBLPromises */; };
+		C4FE1BA02444F9DE00299852 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = C4FE1B9F2444F9DE00299852 /* SwiftDate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40A069024441B0D00169B28 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		C40A06922444231B00169B28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4CED5592443E01600E3678D /* MeTravisDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeTravisDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CED55C2443E01600E3678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CED55E2443E01600E3678D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,10 @@
 		C4CED5842443E4E300E3678D /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
 		C4CED58A2443F0CF00E3678D /* MainDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboard.swift; sourceTree = "<group>"; };
 		C4CED58C2443F0EA00E3678D /* MainDashboard.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainDashboard.graphql; sourceTree = "<group>"; };
+		C4FE1B912444CF3F00299852 /* StatsUpdate.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = StatsUpdate.graphql; sourceTree = "<group>"; };
+		C4FE1B932444D02D00299852 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAssistant.swift; sourceTree = "<group>"; };
+		C4FE1B952444D03C00299852 /* MeTravisDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeTravisDev.entitlements; sourceTree = "<group>"; };
+		C4FE1B972444D03C00299852 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,12 @@
 			files = (
 				C4CED5722443E0C700E3678D /* ApolloSQLite in Frameworks */,
 				C4CED5902443F25C00E3678D /* Introspect in Frameworks */,
+				C4FE1BA02444F9DE00299852 /* SwiftDate in Frameworks */,
+				C4FE1B9B2444DA9F00299852 /* Promises in Frameworks */,
+				C4FE1B9D2444DA9F00299852 /* FBLPromises in Frameworks */,
 				C4CED5762443E0C700E3678D /* Apollo in Frameworks */,
 				C4CED5882443E59A00E3678D /* KeychainSwift in Frameworks */,
+				C4FE1B982444D03C00299852 /* HealthKit.framework in Frameworks */,
 				C4CED5742443E0C700E3678D /* ApolloWebSocket in Frameworks */,
 				C4CED5782443E0C700E3678D /* ApolloCodegenLib in Frameworks */,
 			);
@@ -62,11 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C40A0694244425FB00169B28 /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				C4CED55C2443E01600E3678D /* AppDelegate.swift */,
+				C4CED55E2443E01600E3678D /* SceneDelegate.swift */,
+			);
+			path = launch;
+			sourceTree = "<group>";
+		};
 		C4CED5502443E01600E3678D = {
 			isa = PBXGroup;
 			children = (
 				C4CED55B2443E01600E3678D /* MeTravisDev */,
 				C4CED55A2443E01600E3678D /* Products */,
+				C4FE1B962444D03C00299852 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +109,17 @@
 		C4CED55B2443E01600E3678D /* MeTravisDev */ = {
 			isa = PBXGroup;
 			children = (
+				C4FE1B952444D03C00299852 /* MeTravisDev.entitlements */,
 				C4CED5892443F0B300E3678D /* MainDashboard */,
 				C4CED5812443E40B00E3678D /* Login */,
-				C4CED55C2443E01600E3678D /* AppDelegate.swift */,
-				C4CED55E2443E01600E3678D /* SceneDelegate.swift */,
+				C40A0694244425FB00169B28 /* launch */,
 				C4CED5602443E01600E3678D /* ContentView.swift */,
+				C4FE1B902444CF1900299852 /* HealthKitProcess */,
 				C4CED5622443E01700E3678D /* Assets.xcassets */,
 				C4CED5672443E01700E3678D /* LaunchScreen.storyboard */,
 				C4CED56A2443E01700E3678D /* Info.plist */,
+				C40A069024441B0D00169B28 /* UserSettings.swift */,
+				C40A06922444231B00169B28 /* Constants.swift */,
 				C4CED57D2443E31900E3678D /* API.swift */,
 				C4CED57F2443E33E00E3678D /* Network.swift */,
 				C4CED57A2443E1FE00E3678D /* schema.json */,
@@ -123,6 +154,23 @@
 			path = MainDashboard;
 			sourceTree = "<group>";
 		};
+		C4FE1B902444CF1900299852 /* HealthKitProcess */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE1B912444CF3F00299852 /* StatsUpdate.graphql */,
+				C4FE1B932444D02D00299852 /* HealthKitAssistant.swift */,
+			);
+			path = HealthKitProcess;
+			sourceTree = "<group>";
+		};
+		C4FE1B962444D03C00299852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE1B972444D03C00299852 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +195,9 @@
 				C4CED5772443E0C700E3678D /* ApolloCodegenLib */,
 				C4CED5872443E59A00E3678D /* KeychainSwift */,
 				C4CED58F2443F25C00E3678D /* Introspect */,
+				C4FE1B9A2444DA9F00299852 /* Promises */,
+				C4FE1B9C2444DA9F00299852 /* FBLPromises */,
+				C4FE1B9F2444F9DE00299852 /* SwiftDate */,
 			);
 			productName = MeTravisDev;
 			productReference = C4CED5592443E01600E3678D /* MeTravisDev.app */;
@@ -180,6 +231,8 @@
 				C4CED5702443E0C700E3678D /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				C4CED5862443E59A00E3678D /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				C4CED58E2443F25C00E3678D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				C4FE1B992444DA9F00299852 /* XCRemoteSwiftPackageReference "promises" */,
+				C4FE1B9E2444F9DE00299852 /* XCRemoteSwiftPackageReference "SwiftDate" */,
 			);
 			productRefGroup = C4CED55A2443E01600E3678D /* Products */;
 			projectDirPath = "";
@@ -195,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FE1B922444CF3F00299852 /* StatsUpdate.graphql in Resources */,
 				C4CED5692443E01700E3678D /* LaunchScreen.storyboard in Resources */,
 				C4CED5662443E01700E3678D /* Preview Assets.xcassets in Resources */,
 				C4CED5852443E4E300E3678D /* Login.graphql in Resources */,
@@ -235,9 +289,12 @@
 				C4CED5832443E41F00E3678D /* LoginView.swift in Sources */,
 				C4CED5802443E33E00E3678D /* Network.swift in Sources */,
 				C4CED55D2443E01600E3678D /* AppDelegate.swift in Sources */,
+				C40A069124441B0D00169B28 /* UserSettings.swift in Sources */,
 				C4CED55F2443E01600E3678D /* SceneDelegate.swift in Sources */,
 				C4CED57E2443E31900E3678D /* API.swift in Sources */,
 				C4CED5612443E01600E3678D /* ContentView.swift in Sources */,
+				C40A06932444231B00169B28 /* Constants.swift in Sources */,
+				C4FE1B942444D02D00299852 /* HealthKitAssistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeTravisDev/MeTravisDev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MeTravisDev/Preview Content\"";
 				DEVELOPMENT_TEAM = E4Y97NXBXG;
@@ -393,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeTravisDev/MeTravisDev.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MeTravisDev/Preview Content\"";
 				DEVELOPMENT_TEAM = E4Y97NXBXG;
@@ -457,6 +516,22 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		C4FE1B992444DA9F00299852 /* XCRemoteSwiftPackageReference "promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.8;
+			};
+		};
+		C4FE1B9E2444F9DE00299852 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -489,6 +564,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4CED58E2443F25C00E3678D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		C4FE1B9A2444DA9F00299852 /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FE1B992444DA9F00299852 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
+		};
+		C4FE1B9C2444DA9F00299852 /* FBLPromises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FE1B992444DA9F00299852 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = FBLPromises;
+		};
+		C4FE1B9F2444F9DE00299852 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FE1B9E2444F9DE00299852 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

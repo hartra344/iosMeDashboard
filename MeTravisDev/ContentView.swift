@@ -9,21 +9,25 @@
 import SwiftUI
 import KeychainSwift
 struct ContentView: View {
-    let keychain = KeychainSwift()
-    
-    @State var token: String? = nil
-    
+    @EnvironmentObject var user_settings:UserSettings
+    @State var loaded = false
     var body: some View {
-        
-        if self.token == nil {
-            return AnyView(LoginView().onAppear(perform: checkLogin))
+        if self.user_settings.access_token == nil {
+            return AnyView(LoginView())
         }
-        return AnyView(MainDashboard())
-    }
-    func checkLogin() {
-        self.token = keychain.get(LoginView.loginKeychainKey)
+        if !self.loaded {
+            return AnyView(Text("Loading...").onAppear(perform: authorize_healthkit))
+        }
+        return AnyView(MainDashboard().onAppear(perform: authorize_healthkit))
     }
     
+    func authorize_healthkit() {
+        HealthKitAssistant.authorizeHealthKit().then{value in
+            HealthKitAssistant.updateAllStats().then{v in
+                self.loaded = v
+            }
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
