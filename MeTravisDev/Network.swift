@@ -29,7 +29,6 @@ extension Network: HTTPNetworkTransportPreflightDelegate {
         debugPrint("hello")
         let keychain = KeychainSwift()
         if let token = keychain.get(LoginView.loginKeychainKey) {
-            debugPrint(token)
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         } // else do nothing
     }

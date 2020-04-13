@@ -29,13 +29,10 @@ struct MainDashboard: View {
             case .success(let graphQLResult):
                 if let me = graphQLResult.data?.me {
                     self.meData = me;
-                    print(me.firstname) // Luke Skywalker
                 } else if let errors = graphQLResult.errors {
-                    // GraphQL errors
                     print(errors)
                 }
             case .failure(let error):
-                // Network or response format errors
                 print(error)
             }
         }
