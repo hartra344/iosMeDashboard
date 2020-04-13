@@ -1,0 +1,8 @@
+query MainDashboard {
+  me {
+    firstname
+    lastname
+    avatar
+  }
+}
+
